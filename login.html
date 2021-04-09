@@ -1,23 +1,39 @@
-<form action="action_page.php">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="signup.css">
-
-    <nav class="navbar navbar-inverse">
-     <div class="navbar-header">
-       <a class="navbar-brand" href="Prototype.html">Khana</a>
-     </div>
-   </nav>
-   <div class="container">
-    <h1>login</h1>
-    <hr>
-  <label for="email"><b>Email</b></label>
-  <input type="text" placeholder="Enter Email" name="email" id="email" required>
-
-  <label for="psw"><b>Password</b></label>
-  <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-
-
-
-  </div>
-
-</form>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <link rel="stylesheet" href="loginout.css">
+  </head>
+  <body>
+    <br><h1 style=" text-align: center; font-family: 'Sofia', sans-serif;  font-size: 50px">Khana.com</h1>
+    <br>
+    <div class="wrapper">
+      <div class="title">Login Form</div>
+        <form action="#">
+          <div class="field">
+            <input type="text" required>
+            <label>Email Address</label>
+          </div>
+          <div class="field">
+            <input type="password" required>
+            <label>Password</label>
+          </div>
+          <div class="content">
+            <div class="checkbox">
+              <input type="checkbox" id="remember-me">
+              <label for="remember-me">Remember me</label>
+            </div>
+          <div class="pass-link">
+            <a href="#">Forgot password?</a></div>
+          </div>
+          <div class="field">
+            <input type="submit" value="Login">
+          </div>
+          <div class="signup-link"><label >Not a member? </label>
+            <a href="signup.html">Signup now</a></div>
+        </form>
+    </div>
+  </body>
+</html>
