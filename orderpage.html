@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="icon" href="http://pngimg.com/uploads/batman/batman_PNG16.png">
+    <script src="orderpage.js"></script>
     <meta charset="utf-8">
     <title>Khana</title>
   </head>
@@ -25,19 +26,72 @@
     </div>
     <!-- divison 1 for order page ends-->
     <!-- divison 2 for order page starts-->
-    <div style="background-image: url(https://www.crushpixel.com/big-static11/preview4/colorful-neon-light-background-685911.jpg)">
+    <div style="background-image: url(data:image/jpeg;base64,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)">
       <div class="container">
-        <div class="parent">
-          <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4b1ceee5-9458-4434-80bc-fc5d83a2ea88/de5bxv5-7db7c9c1-8ae8-4f02-bbce-9b9e529989cd.png/v1/fill/w_678,h_799,strp/among_us_character__orange_book_by_unitedworldmedia_de5bxv5-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD03OTkiLCJwYXRoIjoiXC9mXC80YjFjZWVlNS05NDU4LTQ0MzQtODBiYy1mYzVkODNhMmVhODhcL2RlNWJ4djUtN2RiN2M5YzEtOGFlOC00ZjAyLWJiY2UtOWI5ZTUyOTk4OWNkLnBuZyIsIndpZHRoIjoiPD02NzgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.KKo8CwuYC2PA0Ork18TJxtJVQrjAtykfMRfPws0xMG0" alt="bitcoin" class="child" style="width:12%;">
-          <h1 style="color: white; font-size: 55px;" class="child">Restaurant name</h1>
-          <p style="font-size: 15px; color: white;" class="child">Rating</p>
-          <p style="font-size: 15px; color: white;" class="child">Average Cost</p>
+        <div class="parent"><br>
+          <img src="https://www.dominos.co.in/assets/Logo@2x.png" alt="Dominos" class="child"><br><br>
+          <div class="heading "><a href="#" style="color:black;">Timings - 11am - 12midnight</a></div>
+          <div class="heading"><a href="#" style="color:black;">Average Cost - 500/-</a></div>
           <hr>
         </div>
       </div>
     </div>
-
     <!-- divison 2 for order page ends-->
+    <!-- divison 3 for order page starts-->
+    <div class="container"><br><br>
+          <nav class="car">
+            <p color="#363636" onclick="myFunction()" class="menu_selected">part 1</p>
+            <p color="#363636" class="menu_unselected">part 2</p>
+            <p color="#363636" onclick="myFunction()" id="demo" class="menu_unselected">Part 3</p>
+            <p color="#363636" class="menu_unselected">Part 5</p>
+            <p color="#363636" class="menu_unselected">Part 6</p>
+            <p color="#363636" class="menu_unselected">Part 7</p>
+            <p color="#363636" class="menu_unselected">Part 8</p>
+            <br><br><br><br><br><br><br><br><br><br>
+          </nav>
+          <!-- item 1 -->
+            <article class="">
+            <aside class="">
+              <div class="button">
+                <div class="inner">
+                  <p class="text">Add +</p>
+                </div>
+              </div>
+            </aside>
+            <div >
+              <img class="image_right" src="https://b.zmtcdn.com/data/dish_photos/a3d/7ca006ec8907c2ae13fd006cf0853a3d.png?fit=around|130:130&crop=130:130;*,*" alt="">
+            </div>
+            <h1>hello world1</h1>
+          </article>
+          <hr>
+          <!-- item 2 -->
+          <article class="">
+            <aside class="">
+              <div class="button">
+                <div class="inner">
+                  <p class="text">Add +</p>
+                </div>
+              </div>
+            </aside>
+            <h1>hello world2</h1>
+          </article>
+
+          <!-- item 3 -->
+          <article class="">
+            <aside class="">
+              <div class="button">
+                <div class="inner">
+                  <p class="text">Add +</p>
+                </div>
+              </div>
+            </aside>
+            <h1>hello world3</h1>
+          </article>
+          <!-- item 4 -->
+
+    </div>
+
+    <!-- divison 3 for order page ends-->
 
 
 
